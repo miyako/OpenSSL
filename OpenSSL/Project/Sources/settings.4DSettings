@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="6">
+	<com.4d>
+		<compiler>
+			<options target="all"/>
+		</compiler>
+		<general component_classStore_name="OpenSSL"/>
+		<interface>
+			<developper display_toolbar="true"/>
+		</interface>
+	</com.4d>
+</preferences>
