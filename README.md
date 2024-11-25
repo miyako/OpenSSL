@@ -9,8 +9,8 @@
 ./Configure -no-shared -no-pinshared
 ```
 
-* Windows
+* Windows ([vcpkg](https://vcpkg.io/en/package/openssl.html))
 
 ```
-vcpkg install openssl --triplet x64-windows-static
+vcpkg install openssl[tools] --triplet x64-windows-static
 ```
