@@ -16,7 +16,6 @@ Else
 	
 	$key:=Folder:C1567(fk desktop folder:K87:19).file("key.pem")
 	$crt:=Folder:C1567(fk desktop folder:K87:19).file("crt.pem")
-	$cnf:=File:C1566("/RESOURCES/ssl/openssl.cnf")
 	
 	$OpenSSL.start([\
 		"req"; "-x509"; \
@@ -26,7 +25,6 @@ Else
 		"-sha256"; \
 		"-days"; 3650; \
 		"-nodes"; \
-		"-subj"; "\"/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname\""; \
-		"-config"; $cnf])
+		"-subj"; "\"/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname\""])
 	
 End if 

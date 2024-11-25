@@ -15,12 +15,18 @@ Function _terminate()
 Function version() : Text
 	
 	var $worker : 4D:C1709.SystemWorker
-	$worker:=This:C1470.start(["version"]).worker.wait()
+	$worker:=This:C1470.start(["-version"]).worker.wait()
 	$version:=Split string:C1554($worker.response; This:C1470.EOL; sk ignore empty strings:K86:1)
 	
 	return $version.length#0 ? $version[0] : ""
 	
 Function start($options : Collection) : cs:C1710.OpenSSL
+	
+	If ($options#Null:C1517)
+		$cnf:=File:C1566("/RESOURCES/ssl/openssl.cnf")
+		$options.push("-config")
+		$options.push($cnf)
+	End if 
 	
 	$command:=This:C1470.escape(This:C1470.executablePath)
 	
