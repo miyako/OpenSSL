@@ -1,5 +1,20 @@
 # OpenSSL
 
+based on [OpenSSL](https://www.openssl.org)
+
+## dependencies.json
+
+ ```json
+{
+	"dependencies": {
+		"OpenSSL": {
+			"github": "miyako/OpenSSL",
+			"version": "*"
+		}
+	}
+}
+```
+
 ## Usage
 
 ```4d
