@@ -30,8 +30,8 @@ If ($params=Null)
 	
 Else 
 	
-	var $OpenSSL : cs.OpenSSL
-	$OpenSSL:=cs.OpenSSL.new()
+	var $OpenSSL : cs.OpenSSL.OpenSSL
+	$OpenSSL:=cs.OpenSSL.OpenSSL.new()
 	
 	$key:=Folder(fk desktop folder).file("key.pem")
 	$crt:=Folder(fk desktop folder).file("crt.pem")
