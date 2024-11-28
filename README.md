@@ -3,9 +3,12 @@
 [![license](https://img.shields.io/github/license/miyako/OpenSSL)](LICENSE)
 ![downloads](https://img.shields.io/github/downloads/miyako/OpenSSL/total)
 
-# OpenSSL
+### Licensing
 
-based on [OpenSSL](https://www.openssl.org)
+* the source code of this component is licensed under the [MIT license](https://github.com/miyako/curl/blob/master/LICENSE).
+* see [openssl-library.org](https://openssl-library.org/source/license/index.html) for the licensing of **OpenSSL**.
+
+# OpenSSL
 
 ## dependencies.json
 
