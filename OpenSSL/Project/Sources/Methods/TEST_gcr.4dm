@@ -14,6 +14,7 @@ Else
 	var $OpenSSL : cs:C1710.OpenSSL
 	$OpenSSL:=cs:C1710.OpenSSL.new()
 	
+	var $key; $crt : 4D:C1709.File
 	$key:=Folder:C1567(fk desktop folder:K87:19).file("key.pem")
 	$crt:=Folder:C1567(fk desktop folder:K87:19).file("crt.pem")
 	

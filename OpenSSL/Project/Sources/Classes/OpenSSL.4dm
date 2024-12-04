@@ -2,13 +2,15 @@ Class extends _CLI
 
 Class constructor($controller : 4D:C1709.Class)
 	
-	Super:C1705("openssl"; $controller)
+	Super:C1705("openssl"; $controller=Null:C1517 ? cs:C1710._OpenSSL_Controller : $controller)
+	
+	This:C1470.controller.timeout:=5
 	
 Function get worker() : 4D:C1709.SystemWorker
 	
-	return This:C1470._controller.worker
+	return This:C1470.controller.worker
 	
-Function _terminate()
+Function terminate()
 	
 	This:C1470.controller.terminate()
 	
@@ -16,7 +18,8 @@ Function version() : Text
 	
 	var $worker : 4D:C1709.SystemWorker
 	$worker:=This:C1470.start(["-version"]).worker.wait()
-	$version:=Split string:C1554($worker.response; This:C1470.EOL; sk ignore empty strings:K86:1)
+	var $version : Collection
+	$version:=Split string:C1554(This:C1470.data; This:C1470.EOL; sk ignore empty strings:K86:1)
 	
 	return $version.length#0 ? $version[0] : ""
 	
