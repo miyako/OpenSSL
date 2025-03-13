@@ -17,7 +17,7 @@
 	"dependencies": {
 		"OpenSSL": {
 			"github": "miyako/OpenSSL",
-			"version": "*"
+			"version": "latest"
 		}
 	}
 }
