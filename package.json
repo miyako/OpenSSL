@@ -8,11 +8,11 @@
   ],
   "license": "MIT",
   "repository": "https://github.com/miyako/OpenSSL",
-  "version": "1.0.6",
+  "version": "20.0.7",
   "tool": {
     "platform": "macos",
     "branch": "20.x",
-    "version": "20.5",
+    "version": "20.6",
     "build": "latest",
     "arch": "arm"
   }
