@@ -14,4 +14,5 @@
 
 ```
 vcpkg install openssl[tools] --triplet x64-windows-static
+vcpkg install openssl[tools] --triplet arm64-windows-static
 ```
