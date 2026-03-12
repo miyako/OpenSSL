@@ -22,11 +22,11 @@ Function version() : Text
 	
 Function start($options : Collection) : cs:C1710.OpenSSL
 	
-	If ($options#Null:C1517)
-		$cnf:=File:C1566("/RESOURCES/ssl/openssl.cnf")
-		$options.push("-config")
-		$options.push($cnf)
-	End if 
+	//If ($options#Null)
+	//$cnf:=File("/RESOURCES/ssl/openssl.cnf")
+	//$options.push("-config")
+	//$options.push($cnf)
+	//End if 
 	
 	$command:=This:C1470.escape(This:C1470.executablePath)
 	
