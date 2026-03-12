@@ -1,5 +1,9 @@
 ## Build static CLI
 
+### Update
+
+- `2026-03-12` [OpenSSL 3.6.1](https://github.com/openssl/openssl/releases/tag/openssl-3.6.1)
+
 * macOS
 
 ```
